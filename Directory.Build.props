@@ -7,11 +7,20 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <DefaultExcludesInProjectFolder>$(DefaultExcludesInProjectFolder);packages.lock.json</DefaultExcludesInProjectFolder>
     <DefaultItemExcludes>$(DefaultItemExcludes);packages.lock.json</DefaultItemExcludes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Copyright>Copyright (c) 2022 aetos.</Copyright>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <PackageProjectUrl>https://github.com/aetos382/Xsvio</PackageProjectUrl>
+    <PackageTags>csv</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="DotNet.ReproducibleBuilds">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/"/>
   </ItemGroup>
 </Project>
