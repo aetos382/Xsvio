@@ -1,0 +1,17 @@
+<Project>
+  <Sdk Name="DotNet.ReproducibleBuilds.Isolated" Version="1.1.1" />
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <EnablePackageValidation>true</EnablePackageValidation>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DefaultExcludesInProjectFolder>$(DefaultExcludesInProjectFolder);packages.lock.json</DefaultExcludesInProjectFolder>
+    <DefaultItemExcludes>$(DefaultItemExcludes);packages.lock.json</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNet.ReproducibleBuilds">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
